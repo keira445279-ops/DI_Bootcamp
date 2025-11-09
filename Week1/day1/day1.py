@@ -25,6 +25,6 @@ print (x, y)
 #Display a message: "You will turn 100 in X years", where X is the number of years calculated.
 
 age = int(input('What is your age?'))
-calculated_years = 100 - age
-print (f'You will turn 100 in {calculated_years} years')
+#calculated_years = 100 - age
+#print (f'You will turn 100 in {calculated_years} years')
 print (f'You will turn 100 in {100 - age} years')
