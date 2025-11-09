@@ -59,8 +59,7 @@ a = 25
 b = 13
 if a > b:
     print ("Hello World")
-else:
-    print ("Don't know what to print")
+
 
 
 #EXERCISE 7: Odd or Even
@@ -79,3 +78,21 @@ else:
 #Write code that asks the user for their name and determines whether or not you have the same name. 
 #Print out a funny message based on the outcome.
 
+user_name = input('What is your name: ')
+if user_name == 'Kira':
+    print ('Wow! We have the same name. It\'s so cute!')
+else:
+    print ('Sorry! It\'s not a match')
+
+
+#EXERCISE 9: Tall enough to ride a roller coaster
+#Instructions
+#Write code that will ask the user for their height in centimeters.
+#If they are over 145 cm, print a message that states they are tall enough to ride.
+#If they are not tall enough, print a message that says they need to grow some more to ride.
+
+user_height = int(input('What\'s you height in cm: '))
+if user_height > 145:
+    print ('Great! You are tall enough to ride')
+else:
+    print ('Sorry! You need to grow some more to ride')

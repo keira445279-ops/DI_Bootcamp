@@ -1,9 +1,11 @@
-#EXERCISE 7: Odd or Even
+#EXERCISE 9: Tall enough to ride a roller coaster
 #Instructions
-#Write code that asks the user for a number and determines whether this number is odd or even.
+#Write code that will ask the user for their height in centimeters.
+#If they are over 145 cm, print a message that states they are tall enough to ride.
+#If they are not tall enough, print a message that says they need to grow some more to ride.
 
-num = int (input('Print your number, please: '))
-if num % 2 ==0:
-    print (f'Your number {num} is even')
+user_height = int(input('What\'s you height in cm: '))
+if user_height > 145:
+    print ('Great! You are tall enough to ride')
 else:
-    print (f'Your number {num} is odd')
+    print ('Sorry! You need to grow some more to ride')
