@@ -141,11 +141,11 @@ while True:
 # Instructions:
 # Ask the user to input their favorite fruits (they can input several fruits, separated by spaces).
 
-user_fav_fruit = input ('What are your favorite fruites. Please, enter several fruites: ')
+user_fav_fruit = input ('What are your favorite fruites. Please, enter several fruites: ') #input without comma
 
 # Store these fruits in a list.
 
-fruits = [user_fav_fruit]
+fruits =user_fav_fruit.split()
 
 # Ask the user to input the name of any fruit.
 
