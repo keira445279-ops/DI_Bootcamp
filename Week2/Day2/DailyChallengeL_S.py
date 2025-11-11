@@ -43,6 +43,9 @@ user_length = int(input('Please, enter the length: '))
 for i in range (1,user_length+1):
     number_list.append(user_number * i)
 
+# it's easier to murge number_list and loop 
+# number_list = [user_number * i for i in range (1, user_length + 1)]
+
 print (number_list)
 
 
