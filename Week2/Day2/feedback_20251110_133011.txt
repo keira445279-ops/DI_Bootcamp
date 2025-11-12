@@ -1,0 +1,13 @@
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week2/Day2/ExercisesXP.py
+suggestions for improvement:
+- In Exercise 2, the `add` method is not used correctly on tuples because tuples are immutable and don't support the `add` method. The code will throw an error. You should explain why it's not possible to add items to a tuple.
+- In Exercise 3, after clearing the list, you're printing `basket[-1]` which will also result in an error because the basket is empty. The last step is unnecessary, and the initial `basket = ["Banana", "Apples", "Oranges", "Blueberries"]` line is not required here.
+- In Exercise 7, the `fruits = [user_fav_fruit]` line creates a list containing only the entire input string as one element instead of splitting the string into a list of individual fruits. Split the string by spaces before storing it in the list.
+- In Exercise 9, ensure that you handle potential `ValueError` exceptions that can arise if the user enters non-numeric input for age.
+- Overall, consider adding more comments to explain the purpose of each code block and the logic behind it.
+Brief justification:
+- correctness: The code generally solves the problems described in each exercise, but there are a few errors and areas for improvement. Exercise 2 throws an error and Exercise 3 has an unnecessary last step and initial step that causes an out-of-bounds error. Exercise 7 incorrectly stores the fruits as a single string in a list, and Exercise 9 could benefit from input validation. Some exercises are resolved correctly: concatenation of sets, the use of list methods, while loop with proper validation, pizza toppings, and calculation of cinema tickets. The bonus exercise is also correctly resolved.
+- readability: The code is reasonably readable, with clear variable names and some comments. However, adding more comments, especially to explain the logic within loops and conditional statements, would improve readability.
+- performance: The code has good performance. The loops and list operations are generally efficient for the given problem sizes.
+- security: The code could benefit from better input validation, especially in Exercise 9, where the program expects integer input for age. Without validation, the program could crash if the user enters non-numeric input. Exercise 6 implements a validation.
+
