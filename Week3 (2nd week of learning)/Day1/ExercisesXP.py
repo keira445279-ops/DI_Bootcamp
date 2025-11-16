@@ -152,7 +152,7 @@ class Song:
         for element in self.lyrics:
             print (element)
 
-stairway = Song(["There’s a lady who's sure", "all that glitters is gold", "and she’s buying a stairway to heaven"])  
+stairway = Song(["There's a lady who's sure", "all that glitters is gold", "and she's buying a stairway to heaven"])  
 
 stairway.sing_me_a_song()
 
@@ -192,12 +192,12 @@ class Zoo:
 # This method adds a new animal to the animals list.
 # Do not add the animal if it is already in the list.
 
-    def add_animals(self, new_animal):
-        #new_animal = input('Enter an animal: ')
-        if new_animal not in self.animals:
-            self.animals.append(new_animal)
-        else:
-            print(f'{new_animal} is already in the list')
+    def add_animals(self, *new_animal):
+        for animal in new_animal:
+            if animal not in self.animals:
+                self.animals.append(animal)
+            else:
+                print(f'{animal} is already in the list')
 
 
 # 4. Add a method get_animals():
@@ -266,12 +266,13 @@ brooklyn_safari = Zoo("Brooklyn Safari")
 # Step 3: Call the Zoo Methods
 # Use the methods of your Zoo object to test adding, selling, displaying, sorting, and grouping animals.
 
-brooklyn_safari.add_animals("Giraffe")
-brooklyn_safari.add_animals("Horse")
-brooklyn_safari.add_animals("Bear")
-brooklyn_safari.add_animals("Baboon")
-brooklyn_safari.add_animals("Lion")
-brooklyn_safari.add_animals("Hipopotam")
+# brooklyn_safari.add_animals("Giraffe")
+# brooklyn_safari.add_animals("Horse")
+# brooklyn_safari.add_animals("Bear")
+# brooklyn_safari.add_animals("Baboon")
+# brooklyn_safari.add_animals("Lion")
+# brooklyn_safari.add_animals("Hipopotam")
+brooklyn_safari.add_animals("Giraffe", "Horse","Bear","Baboon","Lion","Hipopotam")
 brooklyn_safari.get_animals()
 brooklyn_safari.sell_animal("Bear")
 brooklyn_safari.get_animals()
