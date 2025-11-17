@@ -1,0 +1,10 @@
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week2/Day5/DailyChallenge_Chalengers.py
+suggestions for improvement:
+- Consider adding comments to explain more complex logic, though the code is generally well-documented.
+- For Challenge 2, consider adding a docstring to the function to explain its purpose, arguments, and return value.
+Brief justification:
+- correctness: The code correctly implements both challenges as described in the chapter content. Challenge 1 sorts comma-separated words, and Challenge 2 finds the longest word in a sentence, matching the specified instructions and examples.
+- readability: The code is easy to understand due to clear variable names and comments that follow the steps outlined in the problem description.
+- performance: The code is performant for the given problem sizes. The sorting algorithm and the longest word finding algorithm are efficient for typical sentence lengths.
+- security: The code does not involve any external input that could pose a security risk.
+
