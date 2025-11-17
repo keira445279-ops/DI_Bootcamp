@@ -39,11 +39,18 @@ class Farm:
 # use **kwargs for passing multiple animals. The keys will be the animal name and the value will be the quantity.
 # Then you can call the method this way: macdonald.add_animal('cow'= 5, 'sheep' = 2, 'goat' = 12)
 
-    def add_animals(self, animal_type, count=1):
-        if animal_type not in self.animals:
-            self.animals.update({animal_type: count})
-        else:
-            self.animals[animal_type] += count
+    # def add_animals(self, animal_type, count=1):
+    #     if animal_type not in self.animals:
+    #         self.animals.update({animal_type: count})
+    #     else:
+    #         self.animals[animal_type] += count
+
+    def add_animals(self, **kwargs):
+        for animal_type, count in kwargs.items():
+            if animal_type not in self.animals:
+                self.animals.update({animal_type: count})
+            else:
+                self.animals[animal_type] += count
 
 # Step 4: Implement the get_info Method
 # Create a method called get_info.
@@ -117,12 +124,13 @@ class Farm:
 
 
 macdonald = Farm("McDonald")
-macdonald.add_animals('cow', 5)
-macdonald.add_animals('sheep')
-macdonald.add_animals('sheep')
-macdonald.add_animals('goat', 12)
-macdonald.add_animals('horse', 3)
-macdonald.add_animals('duck')
+# macdonald.add_animals('cow', 5)
+# macdonald.add_animals('sheep')
+# macdonald.add_animals('sheep')
+# macdonald.add_animals('goat', 12)
+# macdonald.add_animals('horse', 3)
+# macdonald.add_animals('duck')
+macdonald.add_animals(cow= 5, sheep = 2, goat = 12)
 print(macdonald.get_info())
 
 print(macdonald.get_animal_types())
