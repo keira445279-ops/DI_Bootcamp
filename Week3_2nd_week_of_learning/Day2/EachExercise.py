@@ -1,103 +1,117 @@
-# *************************************Exercise 4: Family and Person Classes****************************************
-# Goal:
-# Practice working with classes and object interactions by modeling a family and its members.
+# *****************************************Daily Challenge : Pagination*******************************************
+# Step 1: Create the Pagination Class
+# Define a class called Pagination to represent paginated content.
+# It should optionally accept a list of items and a page size when initialized.
 
-# Key Python Topics:
-# Classes and objects
-# Instance methods
-# Object interaction
-# Lists and loops
-# Conditional statements (if/else)
-# String formatting (f-strings)
+# Step 2: Implement the __init__ Method
+# Accept two optional parameters:
+# items (default None): a list of items
+# page_size (default 10): number of items per page
 
-# Instructions:
-# Step 1: Create the Person Class
-# Define a Person class with the following attributes:
-# first_name
-# age
-# last_name (string, should be initialized as an empty string)
-# Add a method called is_18():
-# It should return True if the person is 18 or older, otherwise False.
+# Behavior:
+# If items is None, initialize it as an empty list.
+# Save page_size and set current_idx (current page index) to 0.
+# Calculate total number of pages using math.ceil.
 
-class Person:
-    def __init__(self, first_name, age, last_name = ''):
-        self.first_name = first_name
-        self.age = age
-        self.last_name = last_name 
+import math
 
-    def is_18(self):
-        if self.age >= 18:
-            return True
+class Pagination:
+    def __init__(self, items = None, page_size = 10):
+        if items is None:
+            items = []
+
+        self.items = items
+        self.page_size = page_size
+        self.current_ind = 0
+        self.total_pages = math.ceil(len(self.items) / self.page_size)
+
+
+
+# Step 3: Implement the get_visible_items() Method
+# This method returns the list of items visible on the current page.
+# Use slicing based on the current_idx and page_size.
+    def get_visible_items(self):
+        start = self.page_size * self.current_ind # 10*0 we are making indexes of items from 0 to 10
+        end = start + self.page_size # 0+10
+        return self.items[start:end]
+        
+
+# Step 4: Implement Navigation Methods
+# These methods should help navigate through pages:
+# go_to_page(page_num)
+# → Goes to the specified page number (1-based indexing).
+# → If page_num is out of range, raise a ValueError.
+
+    def go_to_page(self, page_num):
+        if page_num < 1 or page_num > self.total_pages:
+            raise ValueError
         else:
-            return False
+            self.current_ind = page_num - 1 # we have dofferent start positions: for current_ind it is 0 and for page_num it is 1
+            return self.get_visible_items()
+
+# first_page()
+# → Navigates to the first page.
+
+    def first_page(self):
+        return self.go_to_page(1)
+         
+# last_page()
+# → Navigates to the last page.
+
+    def last_page(self):
+        return self.go_to_page (self.total_pages)
+
+# next_page()
+# → Moves one page forward (if not already on the last page).
+
+    def next_page(self):
+        if self.current_ind < self.total_pages-1:
+            return self.go_to_page (self.current_ind +2) # because current_ind = 0, we print 1
+
+# previous_page()
+# → Moves one page backward (if not already on the first page).
+
+    def previous_page(self):
+        if self.current_ind > 0:
+            return self.go_to_page (self.current_ind)
+        else:
+            print ('There is no previous page')
+            return self.get_visible_items() 
+
+# Note:
+# Pages are indexed internally from 0, but user input is expected to start at 1.
+# All navigation methods (except go_to_page) should return self to allow method chaining.
+
+# Step 5: Add a Custom __str__() Method
+# This magic method should return a string displaying the items on the current page, each on a new line.
+
+    def __str__(self):
+        return '\n'.join(self.get_visible_items())
 
 
-# Step 2: Create the Family Class
-# Define a Family class with:
-# A last_name attribute
-# A members list that will store Person objects (should be initialized as an empty list)
+alphabetList = list("abcdefghijklmnopqrstuvwxyz")
+p = Pagination(alphabetList, 4)
 
-class Family:
-        def __init__(self, last_name = ''):
-            self.last_name = last_name
-            self.members = []
+print(p.get_visible_items())
+# ['a', 'b', 'c', 'd']
 
-# Add a method called born(first_name, age):
-# It should create a new Person object with the given first name and age.
-# It should assign the family’s last name to the person.
-# It should add this new person to the members list.
+p.next_page()
+print(p.get_visible_items())
+# ['e', 'f', 'g', 'h']
 
-        def born(self, first_name, age):
-            person1 = Person(first_name, age, self.last_name)
-            self.members.append(person1)
-            return person1
-    
-# Add a method called check_majority(first_name):
-# It should search the members list for a person with that first_name.
-# If the person exists, call their is_18() method.
-# If the person is over 18, print:
-# "You are over 18, your parents Jane and John accept that you will go out with your friends"
-# Otherwise, print:
-# "Sorry, you are not allowed to go out with your friends."
+p.last_page()
+print(p.get_visible_items())
+# ['y', 'z']
 
-        def check_majority(self, first_name):
-            for member in self.members:
-                if member.first_name == first_name:
-                    if member.is_18():
-                        print('You are over 18, your parents Jane and John accept that you will go out with your friends.')
-                    else:
-                        print('Sorry, you are not allowed to go out with your friends.')
-          
+try:
+    p.go_to_page(10)
+except ValueError:
+    print("Page 10 is out of range")
+    #print(p.current_ind + 1)
+    # Output: ValueError
 
-# Add a method called family_presentation():
-# It should print the family’s last name.
-# Then, it should print each family member’s first name and age.
-
-        def family_presentation(self):
-            print(self.last_name)
-            for member in self.members:
-                print (f'{member.first_name} - {member.age}')
-
-# Expected Behavior:
-# Once implemented, your program should allow you to:
-# Create a family with a last name.
-
-my_family = Family('Swift')
-print(my_family.last_name)
-
-# Add members to the family using the born() method.
-
-my_family.born('Taylor', 35)
-my_family.born('Austin', 15)
-
-# Use check_majority() to see if someone is allowed to go out.
-
-my_family.check_majority('Taylor')
-my_family.check_majority('Austin')
-
-# Display family information with family_presentation().
-
-my_family.family_presentation()
-
-# Don’t forget to test your classes by creating an instance of Family, adding members, 
-# and calling each method to see the expected output.
+try:
+    p.go_to_page(0)
+except ValueError:
+    print("Page 0 is out of range")
+# Raises ValueError
