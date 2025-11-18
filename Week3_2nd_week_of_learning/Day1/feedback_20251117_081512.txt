@@ -1,0 +1,11 @@
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week3_2nd_week_of_learning/Day1/DailyChallenge.py
+suggestions for improvement:
+- In `get_info`, the final line should include indentation similar to the example output.
+- In `get_short_info`, the logic for constructing the final string could be simplified using `join` and conditional expressions to handle plurality.
+- Rename `add_animals` to `add_animal` to follow instructions.
+Brief justification:
+- correctness: The code implements the `Farm` class with `__init__`, `add_animal` (using kwargs), `get_info`, `get_animal_types`, and `get_short_info` methods as described in the instructions. The output matches the expected format, fulfilling the core requirements. The only thing missing is the indentation in the `get_info` method and that is a minor error. Also rename `add_animals` to `add_animal`
+- readability: The code is generally well-structured and easy to follow, with clear method names and comments explaining each step. The use of f-strings enhances readability. However, some logic in `get_short_info` could be more concise.
+- performance: The code's performance is efficient, with no unnecessary loops or complex operations. Dictionary lookups and list sorting are standard Python operations.
+- security: The code doesn't involve any external input or operations that could pose a security risk.
+
