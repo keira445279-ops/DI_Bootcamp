@@ -99,6 +99,10 @@ p.next_page()
 print(p.get_visible_items())
 # ['e', 'f', 'g', 'h']
 
+p.go_to_page(3)
+print(p.get_visible_items())
+
+
 p.last_page()
 print(p.get_visible_items())
 # ['y', 'z']
