@@ -1,0 +1,12 @@
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week2/Day3/ExercisesXP.py
+suggestions for improvement:
+- Consider using more descriptive variable names to enhance readability further. For instance, `keys_values` could be named `key_value_dict` for better clarity.
+- In Exercise 2, it would be more readable to define the age ranges as constants (e.g., `CHILD_AGE_MAX = 12`) for the ticket prices.
+- In the Zara exercise, using f-strings can improve readability when constructing the sentence about Zara's clients.
+- In the Disney Characters Exercise, while dictionary comprehensions are concise, adding comments to explain their purpose can greatly improve readability, especially for those less familiar with them.
+Brief justification:
+- correctness: All four exercises are solved correctly and address the instructions of the chapter content. Each exercise demonstrates the requested concepts such as dictionary creation, looping, conditionals, and dictionary manipulation.
+- readability: The code is well-structured and easy to follow, with comments explaining each step. Variable names are generally descriptive.
+- performance: The code is performant and uses appropriate methods for each task. The use of dictionary comprehensions in the Disney Characters exercise is efficient.
+- security: The code doesn't directly involve any user input that could lead to security vulnerabilities. In Exercise 2, while user input is used, it's type-casted to an integer, mitigating basic risks.
+
