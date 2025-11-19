@@ -55,6 +55,6 @@ print(cir1 == cir2)
 
 circles = [cir1, cir2, Circle(26)]
 circles.sort()
-print(circles)
+
 
 

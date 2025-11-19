@@ -1,0 +1,33 @@
+import json
+import os
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
+
+# converting a python dictionsra into a json file
+
+my_family = {
+    'parants': ['Beth', 'Jerry'],
+    'children': ['Summer', 'Morty']
+}
+
+with open(dir_path + '\my_family.json', 'w') as f:
+    json.dump(my_family, f) # create a file
+    print('file was created')
+
+# converting python dictionary to json string
+
+my_family_json = json.dumps(my_family) # create a string
+print(my_family_json)
+
+# converting a json file into a python dictionary
+with open(dir_path + '\my_family.json', 'r') as f:
+    my_family2 = json.load(f)
+
+
+# converting a json string into a python dictionary
+
+my_family3 = json.loads(my_family_json) # create a string
+print(type(my_family3))
+
+

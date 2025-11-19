@@ -14,38 +14,50 @@ class Currency:
         self.amount = amount
 
     def __str__(self):
-        return f'{self.amount} {self.currency}'
+        if self.amount == 1:
+            return f'{self.amount} {self.currency}'
+        else:
+            return f'{self.amount} {self.currency}s' #dollar - dollars
     
     def __int__(self):
-        return self.amount
+        return int(self.amount) #add int
 
     def __repr__(self):
-        return f'{self.amount} {self.currency}'
-    
-    # def __add__(self,other):
-    #     return self.amount + other
-    
+        if self.amount == 1:
+            return f'{self.amount} {self.currency}'
+        else:
+            return f'{self.amount} {self.currency}s'
+
     def __add__(self,other):
-        return self.amount + other.amount
+        if type(other) != int:
+            return self.amount + other.amount
+        else:
+            return self.amount + other
     
     def __str__(self):
-        return f'{self.amount} {self.currency}'
+        return f'{self.amount} {self.currency}s'
 
-    
-    def __iadd__(self, other):
-        try:
-            self.amount += other.amount
-        except AttributeError:
-            self.amount += other
-        return self
+    def __iadd__(self,other):
+        if type(other) != int:
+            result = self.amount + other.amount
+            self.amount = result
+            return self
+        else:
+            result = self.amount + other
+            self.amount = result
+            return self
 
-    def __repr__(self):
-        return f'{self.amount} {self.currency}'
-
-    
     def __add__(self,other):
         if self.currency != other.currency:
             return f'Cannot add between Currency type {self.currency} and {other.currency}'
+    
+    # def __add__(self,other):
+    #     if type(other) != int and self.currency == other.currency:
+    #         return self.amount + other.amount
+    #     elif type(other) == int:
+    #         return self.amount + other
+    #     else:
+    #         raise TypeError (f'Cannot add between Currency type {self.currency} and {other.currency}')
 
 
 # Using the code above, implement the relevant methods and dunder methods which will output the results below.
