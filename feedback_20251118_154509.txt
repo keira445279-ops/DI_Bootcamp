@@ -1,0 +1,18 @@
+URL: URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week3_2nd_week_of_learning/Day3/ExercisesXP.py
+suggestions for improvement:
+- In Exercise 1, the `__add__` method should raise a TypeError instead of returning a string when currencies are different. Also, there's redundant definition of dunder methods.
+- In Exercise 3, it's recommended to use `string.ascii_letters` to include both uppercase and lowercase letters as specified in the instructions.
+- In Exercise 6, the multiplication of the difference seconds should be outside of the 'total_seconds()
+- Consider adding more descriptive variable names.
+Correctness: 80%
+-----
+URL: URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week3_2nd_week_of_learning/Day3/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week3_2nd_week_of_learning/Day3/exercise_one.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
