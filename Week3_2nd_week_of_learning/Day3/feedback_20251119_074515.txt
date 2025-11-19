@@ -1,0 +1,10 @@
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week3_2nd_week_of_learning/Day3/DailyChallenge.py
+suggestions for improvement:
+- Consider using a class method with a decorator to allow initialization with diameter. The code currently only allows initialization using radius.
+- Add a method to calculate the area of the circle, as it is a requirement.
+Brief justification:
+- correctness: The code correctly implements the `Circle` class with the required dunder methods (`__str__`, `__repr__`, `__add__`, `__gt__`, `__eq__`, `__lt__`). It also demonstrates the usage of these methods. However, it's missing the area calculation and the ability to initialize the circle with diameter.
+- readability: The code is well-structured and easy to understand. The use of descriptive variable names and comments enhances readability.
+- performance: The code's performance is good. The dunder methods are implemented efficiently, and there are no unnecessary computations.
+- security: There are no security concerns in this code, as it doesn't involve any external input or sensitive operations.
+
