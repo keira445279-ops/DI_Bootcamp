@@ -1,0 +1,10 @@
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week2/Day1/ExercisesXP.py
+suggestions for improvement:
+- In Exercise 3, consider using triple quotes for multiline comments instead of multiple single-line comments.
+- In Exercise 4, it might be beneficial to validate the user input to ensure it's a valid computer brand.
+Brief justification:
+- correctness: The code accurately addresses all the exercises in the chapter content. Exercise 1 prints 'Hello World' four times. Exercise 2 calculates the given math expression. Exercise 3 correctly predicts the boolean outputs. Exercise 4 prompts the user for their computer brand and prints the requested sentence. Exercise 5 stores personal information in variables and prints a sentence using them. Exercise 6 compares two variables and prints 'Hello World' if a > b. Exercise 7 checks if a user's input is odd or even. Exercise 8 compares the user's name to 'Kira'. Exercise 9 checks the user's height and determines if they are tall enough to ride a roller coaster.
+- readability: The code is generally well-formatted and easy to read. Variable names are descriptive, and comments explain the purpose of each exercise. The use of f-strings enhances readability. Only minor suggestions for improvement.
+- performance: The code is efficient and performs the tasks without any unnecessary overhead. The mathematical operations and comparisons are straightforward. Using \n for newlines in Exercise 1 is efficient.
+- security: The code doesn't have any apparent security vulnerabilities. User input is used, but the code doesn't perform any operations that could lead to security risks. Using `int(input())` is a good practice to avoid type-related errors.
+

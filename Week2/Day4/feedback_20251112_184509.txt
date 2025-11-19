@@ -1,0 +1,15 @@
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week2/Day4/DailyChallenge.py
+suggestions for improvement:
+- The show_menu function should print 'The menu is empty.' when the menu is empty, but it does not do this correctly.  The if statement should evaluate 'if not menu:' instead.
+- The show_menu function currently prints 'NIS' after each price. This was not specified in the original challenge, which asked for the '₪' symbol.  The f-string should be changed to 'f'{key} - {value}₪''
+- The function naming show_option is inconsistent with the rest of the function names. It should be show_options
+- The validation check `elif user_option_choice > 6:` in `run_coffee_shop` will not print the error message when the user enters a negative value or zero, since those conditions were not specified in the conditional expression.
+- The inclusion of `print(option_choice_count)` and `if option_choice_count >= 5: print('Goobuy!')` in the `run_coffee_shop` function appears to be for debugging or a feature not described in the prompt. These should be removed for cleaner, more aligned functionality.
+- Add docstrings to all functions to better explain what they do.
+- Rename the menu dictionaries to be more descriptive.
+Brief justification:
+- correctness: The code implements most of the required functionality, including showing the menu, adding items, updating prices, deleting items, and the main loop. It also includes the extra 'search' feature and the negative price validation, which is good.  There are a few bugs, but overall it is very good.
+- readability: The code is generally well-formatted and easy to follow. Function names are descriptive, and the code is organized into functions as required. Variable names could be more descriptive.
+- performance: The code's performance is adequate for the problem's scope. There are no obvious performance bottlenecks.
+- security: The code uses `input()` to get user input, which can be a security risk if not handled carefully. There are no immediately exploitable vulnerabilities in this code, but consider sanitizing user input in real-world applications.
+
