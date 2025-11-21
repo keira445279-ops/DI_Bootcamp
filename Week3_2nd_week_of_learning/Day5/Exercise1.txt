@@ -1,0 +1,15 @@
+Answer the following questions:
+
+- What is a class? This is a template or pattern for creating objects. It defines the common attributes (data) 
+and methods (behavior) that all objects of this class will share. Each object created from the class can have its own 
+attribute values ​​and even behave slightly differently.
+- What is an instance? This is a specific object created based on a class. If a class is a template, then an instance 
+is a real object with its own attributes and behavior described in the class.
+- What is encapsulation? This is an OOP principle that defines the data and implementation details of a project.
+Other parts of the program can use an object only through its public methods, without directly affecting its internal attributes.
+- What is abstraction? This is an OOP principle that allows you to focus only on what is important and necessary for using an object, 
+hiding all unnecessary implementation details.
+= What is inheritance? It is an OOP principle that allows one class to obtain the properties and behavior of another class.
+- What is multiple inheritance? This is when one class inherits properties and methods from several classes at once.
+- What is polymorphism? This is when you can call the same method on different classes, and each class will perform its own specific action.
+- What is method resolution order or MRO? This is the order in which Python searches for methods and attributes when inheriting.
