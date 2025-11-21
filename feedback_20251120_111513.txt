@@ -1,0 +1,15 @@
+URL: URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week3_2nd_week_of_learning/Day5/MP_Anagram_checker.py
+suggestions for improvement:
+- Consider using a set instead of a list for `self.words` in the `__init__` method. This would improve the performance of `is_valid_word` significantly.
+- The `is_valid_word` check within the `is_anagram` method might be redundant. Depending on the use case, it might be sufficient to only check for anagrams among valid words in the `get_anagrams` method or before calling `is_anagram`.
+- It could enhance the program to handle file not found exceptions more gracefully
+Correctness: 100%
+-----
+URL: URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week3_2nd_week_of_learning/Day5/anagrams.py
+suggestions for improvement:
+- The code assumes that MP_Anagram_checker.py is in the same directory, but doesn't verify if the file exists. Add a check to ensure the file exists before proceeding.
+- The code does not validate the user input word against the wordlist to ensure it is a valid English word, only checks for anagrams. It should use the `is_valid_word` method from `AnagramChecker` to do that.
+- The formatting of the output message could be improved for better readability. Using \n for newlines is clearer than relying on implicit line breaks within a triple-quoted string.
+- Error handling can be more robust. Handle potential `ValueError` exceptions if the user enters non-integer input for the menu choice.
+Correctness: 70%
+-----

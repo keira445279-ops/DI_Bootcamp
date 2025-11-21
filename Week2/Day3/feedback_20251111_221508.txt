@@ -1,0 +1,10 @@
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week2/Day3/DailyChallenge.py
+suggestions for improvement:
+- Consider adding more comments to explain the logic behind each step in challenge 2, especially the data cleaning process.
+- You could improve the efficiency in challenge 2 by breaking out of the loop once the wallet amount is zero.
+Brief justification:
+- correctness: The code correctly implements both challenges as described in the chapter content. Challenge 1 accurately creates the letter index dictionary, and challenge 2 correctly determines and sorts affordable items, handling the 'Nothing' case as well. The data cleaning is done correctly.
+- readability: The code is generally well-readable, with clear variable names and straightforward logic. The use of comments to separate the challenges and explain sections enhances readability. Minor improvements could involve adding more inline comments to clarify specific operations.
+- performance: The code demonstrates good performance for the given problem sizes. The solutions are efficient, and the use of `enumerate` in the first challenge is a good practice. For Challenge 2, consider breaking the loop once the wallet reaches zero to optimize the code further.
+- security: The code has no apparent security concerns. It uses `input()` to get user input for the first challenge, but there is no risk of code injection or similar vulnerabilities. In Challenge 2, data cleaning is correctly implemented to handle dollar signs and commas. There are no file operations or network requests that would create potential attack vectors.
+
