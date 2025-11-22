@@ -75,7 +75,7 @@ class Game:
         user_item = self.get_user_item()
         computer_item= self.get_computer_item()
         result = self.get_game_result(user_item, computer_item)
-        print (f'user’s choice: {user_item}, computer’s choice: {computer_item}, result: {result}')
+        print (f'user\'s choice: {user_item}, computer\'s choice: {computer_item}, result: {result}')
         return result
 
 if __name__ == "__main__":
