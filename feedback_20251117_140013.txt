@@ -1,0 +1,15 @@
+URL: URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week3_2nd_week_of_learning/Day2/ExercisesXP.py
+suggestions for improvement:
+- In Exercise 3, consider creating a separate file (e.g., `Dog_Class.py`) for the `Dog` class and then importing it into the file containing the `PetDog` class as suggested in the instructions. This promotes better code organization.
+- In Exercise 3 the play method has an error. The exercise request is to print all the dogs playing together, but the code as it is, will not work.
+- In Exercise 3 in the do_a_trick function it is no need to return a value, since is not being used.
+Correctness: 95%
+-----
+URL: URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week3_2nd_week_of_learning/Day2/Dog_Class.py
+suggestions for improvement:
+- In the `run_speed` method, you're multiplying age by 10 instead of dividing weight by age and then multiplying by 10 according to the instructions.
+- In the `run_speed` method you are dividing by age*10 instead of age / 10, this will affect the final answer, same for the fight method.
+- The 'play' method in `PetDog` class should print dog names playing together, but in the example code prints string instead of list of dogs. Need to fix play method to extract name value.
+- The `run_speed` method would be more readable and maintainable if it were named `calculate_run_speed` to better reflect its purpose. However, this is a minor point.
+Correctness: 80%
+-----
