@@ -1,0 +1,10 @@
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week7_6th_week_of_learning/Day1/ExerciseXP.sql
+suggestions for improvement:
+- Consider removing commented-out code for better readability in the final version.
+- The comments are helpful, but consider a more consistent style (e.g., using consistent capitalization or spacing).
+Brief justification:
+- correctness: The code accurately creates the 'items' and 'customers' tables, inserts the specified data, and performs all the required queries, aligning perfectly with the instructions in Exercise 1.
+- readability: The code is generally readable, with clear table and column names. The use of comments enhances understanding. However, the commented-out code slightly reduces readability.
+- performance: The SQL queries are straightforward and efficient for the given task. Indexing could be considered for larger datasets, but it's not necessary here.
+- security: The code uses standard SQL syntax and doesn't involve any user input, so there are no immediate security concerns. Prepared statements and parameterized queries could be employed in a real application where user input is involved.
+
