@@ -1,0 +1,11 @@
+URL: URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week3_2nd_week_of_learning/Day5/Exercise1.txt
+suggestions for improvement:
+- The response answers the first exercise which involves definitions of OOP concepts, but it does not include any code to fulfill the second exercise of creating a Deck of Cards class which is also explicitly requested in the instructions.
+Correctness: 0%
+-----
+URL: URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week3_2nd_week_of_learning/Day5/DailyChallenge.py
+suggestions for improvement:
+- Consider adding docstrings to the class and methods to explain their purpose.
+- Rename `shuffle_cards` to `shuffle` to match the exercise instructions precisely.
+Correctness: 100%
+-----
