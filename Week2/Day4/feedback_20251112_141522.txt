@@ -1,0 +1,10 @@
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week2/Day4/ExercisesXP.py
+suggestions for improvement:
+- In Exercise 4, the code checks if user_number is within range twice. It can be optimized.
+- In Exercise 6, instead of creating a new list, the original list can be modified directly to adhere strictly to the instructions (although the current solution is generally preferred for not mutating the original data).
+Brief justification:
+- correctness: The code correctly implements all 7 exercises according to the descriptions provided in the chapter content. Each function performs as expected, adhering to the specified requirements for parameters, default values, and output. The bonus parts for exercises 4 and 7 have also been implemented.
+- readability: The code is generally well-formatted and easy to read, with clear comments explaining each step. Some sections could benefit from more concise comments or variable names, but overall it's very readable.
+- performance: The code is performant, with no unnecessary loops or complex operations. The random number generation and string formatting are efficient.
+- security: There are no apparent security concerns in the provided code. User input in Exercise 7 is cast to an integer, mitigating basic injection risks.
+

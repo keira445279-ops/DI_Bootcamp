@@ -1,0 +1,10 @@
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week7_6th_week_of_learning/Day1/DailyChallenge.sql
+suggestions for improvement:
+- Consider adding comments to explain the purpose of each query.
+- The explanation after the failed insertion attempt could be made more concise.
+Brief justification:
+- correctness: The code directly addresses the questions in the 'Instructions' section. It counts the number of actors and attempts to add a new actor with a blank field, demonstrating understanding of SQL constraints. The code is correct and relevant to the chapter content.
+- readability: The code is generally readable, with clear SQL statements. Using comments to delineate each part would improve readability.
+- performance: The SQL queries are simple and efficient for the given task. No performance concerns.
+- security: The code uses parameterized queries implicitly which prevents SQL injection vulnerabilities.
+
