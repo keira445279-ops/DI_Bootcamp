@@ -1,0 +1,11 @@
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week2/Day5/Mini_Project_Tic_Tac_Toe.py
+suggestions for improvement:
+- Consider moving the board_dict definition inside the play function, as it's only used there.
+- The checking_for_a_tie function takes check_win as an argument, but doesn't need to since check_win is in global scope. It is better to pass it if you are going to use it.
+- The player input validation could be more robust, handling non-integer inputs.
+Brief justification:
+- correctness: The code accurately implements the Tic Tac Toe game as described in the instructions. It includes functions for representing the board, displaying it, getting player input, checking for a winner, checking for a tie, and managing the main game loop. All steps from the instructions are followed.
+- readability: The code is generally well-structured and readable. The use of comments to explain each step enhances readability. The function names are descriptive. The f-strings in display_board and player_input make the code easier to understand.
+- performance: The code's performance is adequate for a simple Tic Tac Toe game. There are no major performance bottlenecks. The use of a dictionary for board positions is efficient.
+- security: The code is relatively secure for a command-line application. The player input is validated to ensure it's within the valid range. However, it could be made more robust by handling potential exceptions (e.g., ValueError if the user enters non-numeric input).
+

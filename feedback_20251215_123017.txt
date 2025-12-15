@@ -1,0 +1,12 @@
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week7_6th_week_of_learning/Day2/ExerciseXP_1.sql
+suggestions for improvement:
+- The comments are very helpful to understand the purpose of each query. Consider adding comments to the next section as well.
+- The SQL queries are good and answer the questions correctly.
+Correctness: 100%
+-----
+URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week7_6th_week_of_learning/Day2/ExerciseXP_2.sql
+suggestions for improvement:
+- The code is well-organized and easy to understand.
+- Consider adding comments to explain complex queries further.
+Correctness: 100%
+-----

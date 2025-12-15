@@ -1,0 +1,13 @@
+URL: URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week3_2nd_week_of_learning/Day5/game.py
+suggestions for improvement:
+- Add input validation in `get_user_item` to ensure the user enters a valid choice (rock, paper, or scissors).
+- Consider using a dictionary or a set to store the valid user choices for easier validation.
+- The `__init__` method is currently empty. While not strictly required, consider initializing any game-related state here.
+Correctness: 90%
+-----
+URL: URL: https://github.com/keira445279-ops/DI_Bootcamp/blob/main/Week3_2nd_week_of_learning/Day5/rock-paper-scissors.py
+suggestions for improvement:
+- Consider adding error handling for unexpected input types in `print_result()` function.
+- The comments are quite extensive; while helpful for understanding the steps, consider reducing them in a production environment for cleaner code.
+Correctness: 100%
+-----
