@@ -1,0 +1,23 @@
+<html> 
+<head> 
+  <title> HTML and JavaScript Content </title>
+</head>
+<body> 
+  <h1>This is a heading</h1>
+  <p>This is a paragraph.</p>
+  <ul> This is a list:
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+<script> 
+  window.onload = function() {
+  let heading = document.querySelector('h1');
+  heading.textContent = 'New Heading';
+  heading.style.color = 'green';
+  console.log('The heading is changed successfully');
+  };
+</script>
+</body>
+</html>
