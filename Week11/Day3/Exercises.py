@@ -1,0 +1,1 @@
+# The assignments are located in this folder. I had to add this python file because the submission link was not being accepted without a python file.
