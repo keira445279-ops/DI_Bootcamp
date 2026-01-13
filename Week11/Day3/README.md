@@ -1,0 +1,1 @@
+The assignments are located in this folder. I had to add this README file because the submission link was not being accepted without a text file.
